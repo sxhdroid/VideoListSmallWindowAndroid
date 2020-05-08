@@ -3,10 +3,6 @@ package com.zhaoyp.video.activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -16,18 +12,22 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.google.gson.Gson;
+import com.ijk.libplayer.IjkVideoView;
+import com.ijk.libplayer.VideoItemView;
 import com.zhaoyp.video.R;
 import com.zhaoyp.video.media.IEvent;
-import com.zhaoyp.video.media.IjkVideoView;
 import com.zhaoyp.video.media.VideoAdapter;
 import com.zhaoyp.video.media.VideoEvent;
 import com.zhaoyp.video.media.VideoModel;
 import com.zhaoyp.video.util.Utils;
-import com.zhaoyp.video.media.VideoItemView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 
 /**

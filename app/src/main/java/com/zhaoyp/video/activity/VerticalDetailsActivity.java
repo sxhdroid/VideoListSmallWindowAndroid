@@ -2,17 +2,17 @@ package com.zhaoyp.video.activity;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.ijk.libplayer.VideoItemView;
 import com.zhaoyp.video.R;
-import com.zhaoyp.video.media.VideoItemView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 
 /**

@@ -2,8 +2,6 @@ package com.zhaoyp.video;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.constraint.Guideline;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,11 +9,12 @@ import com.zhaoyp.video.activity.DetailsActivity;
 import com.zhaoyp.video.activity.ListActivity;
 import com.zhaoyp.video.activity.VerticalDetailsActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     protected Button textList;
     protected Button textDetail;
-    protected Guideline guideline4;
     protected Button textDetailsV;
 
     @Override
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textList.setOnClickListener(MainActivity.this);
         textDetail = (Button) findViewById(R.id.text_detail);
         textDetail.setOnClickListener(MainActivity.this);
-        guideline4 = (Guideline) findViewById(R.id.guideline4);
         textDetailsV = (Button) findViewById(R.id.text_details_v);
         textDetailsV.setOnClickListener(MainActivity.this);
     }
